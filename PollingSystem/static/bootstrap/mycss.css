@@ -1,0 +1,56 @@
+
+.customDivL{
+    padding-top: 25px;
+ margin: 3px;
+ min-height: 300px;
+ background-color: white;
+ text-align: center;
+ font-size: 25px;
+ color:#566573  ;
+
+}
+
+.customDivF{
+    padding-top: 25px;
+ margin: 3px;
+ min-height: 300px;
+ background-color: #D6DBDF  ;
+ text-align: center;
+ font-size: 15px;
+ color:blue;
+}
+.jumbotron{
+    
+    color:black;
+    text-align: center;
+}
+
+.CustMenu{
+  color: gray;
+}
+
+
+.customDiv
+{
+  min-height: 300px;
+background-color: silver;
+text-align: center;
+font-size: large;
+ border: 2px solid silver;
+ border-radius: 5px;
+}
+
+
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: white}
+th {
+    background-color: silver;
+    color: black;
+}
+

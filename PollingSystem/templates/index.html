@@ -1,0 +1,85 @@
+{% extends 'base.html '%}
+{% block title %} login {% endblock %}
+{% block body %}
+
+      <div class="jumbotron">
+         {% if Choices %}
+           <h2>Showing All Suggested Spots</h2>
+             <br></br>
+                <div class="row">
+            
+                <table class="table table-responsive table-bordered">
+<thead>
+
+    <tr>
+              <th>Spot Name</th>
+              <th>Place</th>
+              <th>Picnic Fare</th>
+      
+    </tr>
+</thead>
+<tbody>
+   {% for choice in Choices %}
+<tr>
+
+
+<td>{{ choice.place_name }}</td>
+<td>{{ choice.detail }}</td>
+<td>{{ choice.approx_cost }}</td>
+
+</tr>
+ {% endfor %}
+</tbody>
+</table>
+         
+
+
+
+                </div>
+                 {% endif %}
+       </div>
+
+   
+    <div class="jumbotron">
+         {% if Choices %}
+           <h2>Please select one of the following to submit your choice</h2>
+             <br></br>
+                <div class="row">
+            
+                <table class="table table-responsive table-bordered">
+ <form method="post" class="form-horizontal">
+                                    {% csrf_token %}
+            
+           {{form.as_p}} 
+
+            <div class="col-sm-offset-5 col-sm-6">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
+
+        </form>
+</table>
+         
+
+
+
+                </div>
+                 {% endif %}
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}    
+       
+     
+     

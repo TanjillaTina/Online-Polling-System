@@ -1,0 +1,43 @@
+{% extends 'base.html '%}
+{% block title %} login {% endblock %}
+{% block body %}
+
+      <div class="jumbotron" id="AddNew">
+       <h2>Admin Login</h2>
+        <p class="lead">Enter Username and Password here to Login</p>
+        <p></p>
+      <div class="row">
+
+
+          <div class="col-md-12 col-xs-12 col-sm-0 col-lg-12 ">
+            
+          
+                <div class="customDivF"><class=text-primary>
+
+
+             <form method="post" class="form-horizontal">
+              {% csrf_token %}
+            
+                
+                      {{form.as_p}}    
+                 
+                              
+                    
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                </div>
+                
+      
+
+
+        </div>
+      </div>
+
+
+    </div> <!-- /container -->
+   
+{% endblock %}    
+       
+     
+     
